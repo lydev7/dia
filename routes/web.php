@@ -18,6 +18,6 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes(['verify' => true]);
 
-Route::get('params',function (){
-    return view('user.params');
-})->name('params');
+Route::get('params','UserController@params')->name('params');
+
+Route::post('params', 'UserController@paramsUpdate')->name('params.update');
