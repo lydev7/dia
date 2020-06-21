@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes(['verify' => true]);
+Route::middleware(['auth', 'password.confirm'])->group(function (){
+    Route::get('params','UserController@params')->name('params');
 
-Route::get('params','UserController@params')->name('params');
+    Route::post('params', 'UserController@paramsUpdate')->name('params.update');
+});
 
-Route::post('params', 'UserController@paramsUpdate')->name('params.update');

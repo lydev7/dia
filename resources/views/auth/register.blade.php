@@ -35,7 +35,7 @@
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
                     <div class="input-group mb-3">
-                        <input name="password" type="password" class="form-control @error('password') border-danger @enderror" placeholder="Password" required>
+                            <input name="password" type="password" class="form-control @error('password') border-danger @enderror" placeholder="Password" required>
                         <div class="input-group-append">
                             <div class="input-group-text @error('password') border-danger @enderror">
                                 <span class="fas fa-lock"></span>
