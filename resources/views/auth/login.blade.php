@@ -52,7 +52,7 @@
                 </form>
                 <hr>
                 <p class="mb-1">
-                    <a href="#">I forgot my password</a>
+                    <a href="{{ route('password.request') }}">I forgot my password</a>
                 </p>
                 <p class="mb-0">
                     <a href="{{ route('register') }}" class="text-center">Register a new membership</a>

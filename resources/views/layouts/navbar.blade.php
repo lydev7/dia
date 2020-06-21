@@ -22,7 +22,7 @@
                 <a href="#" class="dropdown-item">
                     <i class="fa fa-user-alt mr-2"></i> Profile
                 </a>
-                <a href="#" class="dropdown-item">
+                <a href="{{ route('params') }}" class="dropdown-item">
                     <i class="fa fa-cog mr-2"></i> Params
                 </a>
                 <form action="{{ route('logout') }}" method="POST">

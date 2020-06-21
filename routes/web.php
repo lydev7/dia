@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes(['verify' => true]);
+
+Route::get('params',function (){
+    return view('user.params');
+})->name('params');
