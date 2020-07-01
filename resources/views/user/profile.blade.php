@@ -6,11 +6,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Dashboard</h1>
+                    <h1 class="m-0 text-dark">Profile</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-muted">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('user.index') }}" class="text-muted">List Users</a></li>
+                        <li class="breadcrumb-item"><a href="#">Profile</a></li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -27,14 +29,14 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>{{ $nbr_users }}</h3>
+                            <h3>{{ $user->name }}</h3>
 
-                            <p>User Registrations</p>
+                            <p>{{ $user->email }}</p>
+                            <small>{{ 'created Date: ' . $user->created_at }}</small>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-person-add"></i>
+                            <i class="ion ion-person"></i>
                         </div>
-                        <a href="#" class="small-box-footer">List Users <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->

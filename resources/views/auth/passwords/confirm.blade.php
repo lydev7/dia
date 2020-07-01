@@ -3,7 +3,7 @@
 @section('content')
     <div class="lockscreen-wrapper">
         <div class="lockscreen-logo">
-            <a href="/"><b>Dia</b></a>
+            <a href="/"><b>Password Confirmation</b></a>
         </div>
         <!-- User name -->
         <div class="lockscreen-name">{{ auth()->user()->email }}</div>

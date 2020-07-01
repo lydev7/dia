@@ -2,12 +2,12 @@
 @section('content')
     <div class="col-12 offset-0 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
         <div class="register-logo">
-            <a href="/"><b>Dia</b></a>
+            <a href="/"><b>Params</b></a>
         </div>
 
         <div class="card">
             <div class="card-body register-card-body">
-                <p class="login-box-msg">Register a new membership</p>
+                <p class="login-box-msg">Here you can easily update your Account Data</p>
 
                 <form action="{{ route('params.update') }}" method="post">
                     @csrf
