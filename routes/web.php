@@ -30,5 +30,6 @@ Route::middleware(['auth', 'password.confirm', 'admin'])->group(function (){
     // Attributes
     Route::resource('attribute','AttributeController')->only(['index', 'store', 'destroy']);
 });
+
 // premium
 
