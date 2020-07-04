@@ -28,6 +28,18 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('user.index') }}" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <p>List Users</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('attribute.index') }}" class="nav-link">
+                        <i class="fab fa-battle-net"></i>
+                        <p>Attributes</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

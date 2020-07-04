@@ -41,7 +41,8 @@
                                     <td>{{ $loop->index+1 }}</td>
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td><a href="{{ route('user.show',compact('user')) }}" class="btn btn-primary btn-sm">View</a>
+                                    <td><a href="{{ route('user.show',compact('user')) }}"
+                                           class="btn btn-primary btn-sm">View</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -57,7 +58,6 @@
                 </div>
                 <!-- /.card -->
             </div>
-            <!-- /.card -->
         </section>
         <!-- /.content -->
     </div>

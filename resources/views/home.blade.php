@@ -34,7 +34,9 @@
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
                         </div>
-                        <a href="#" class="small-box-footer">List Users <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('user.index') }}" class="small-box-footer">
+                            List Users <i class="fas fa-arrow-circle-right"></i>
+                        </a>
                     </div>
                 </div>
                 <!-- ./col -->
