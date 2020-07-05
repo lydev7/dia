@@ -29,5 +29,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call(AttributeSeeder::class);
 
+        // message
+        $this->call(MessageSeeder::class);
+
     }
 }

@@ -40,6 +40,12 @@
                         <p>Attributes</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('message.index') }}" class="nav-link">
+                        <i class="fab fa-battle-net"></i>
+                        <p>Signals</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

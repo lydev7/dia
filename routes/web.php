@@ -29,7 +29,15 @@ Route::middleware(['auth', 'password.confirm', 'admin'])->group(function (){
     Route::resource('user','UserController')->only(['index', 'show']);
     // Attributes
     Route::resource('attribute','AttributeController')->only(['index', 'store', 'destroy']);
+
+
 });
+// list
+// create
+// update
+// Delete
+// pusher
+Route::resource('message','SignalController')->except(['create', 'show']);
 
 // premium
 

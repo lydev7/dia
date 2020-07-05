@@ -56,21 +56,31 @@
 <!-- sweetalert2 -->
 <script src="{{ asset('plugins/sweetalert2/sweetalert2.min.js') }}"></script>
 <script type="text/javascript">
-    $(function () {
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 7000
+        });
         let success = $('#session_success').val();
-        if (success.length > 0) {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 7000
-            });
+        let danger = $('#session_danger').val();
+
+        if (success !== undefined) {
             Toast.fire({
                 type: 'success',
                 title: success
             })
         }
-    });
+
+        if (danger !== undefined) {
+            $('body').Toasts('create', {
+                class: 'bg-danger',
+                title: 'Error',
+                subtitle: '',
+                body: danger
+            })
+        }
 </script>
 @stack('script')
 </body>

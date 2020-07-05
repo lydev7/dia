@@ -38,6 +38,10 @@ class AttributeController extends Controller
      */
     public function destroy(Attribute $attribute)
     {
+        if(isset($attribute->signals[0])){
+            session()->flash('danger', 'This Attribute is related with message we can Not Deleted');
+            return back();
+        }
         $attribute->delete();
         session()->flash('success', 'The Attribute is Deleted Successfully');
         return redirect()->route('attribute.index');
